@@ -384,6 +384,22 @@
   {
     "license_name": "Apache 2.0",
     "license_url": "https://choosealicense.com/licenses/apache-2.0/",
+    "prompt_template": "<|fim_prefix|>{prefix}<|fim_suffix|>{suffix}<|fim_middle|>",
+    "name": "Qwen2.5-Coder-14B_Q6_K",
+    "provider_url": "https://huggingface.co/Qwen/Qwen2.5-Coder-14B",
+    "partition_urls": [
+      {
+        "urls": [
+          "https://huggingface.co/bartowski/Qwen2.5-Coder-14B-GGUF/resolve/main/Qwen2.5-Coder-14B-Q6_K.gguf"
+        ],
+        "sha256": "b7d035013a0570b7bc116ddf9dfc58d85d054869455c1c3d5a12f9ad3095be8b"
+      }
+    ],
+    "sha256": ""
+  },
+  {
+    "license_name": "Apache 2.0",
+    "license_url": "https://choosealicense.com/licenses/apache-2.0/",
     "chat_template": "{% for message in messages %}{% if loop.first and messages[0]['role'] != 'system' %}{{ '<|im_start|>system\nYou are a helpful assistant<|im_end|>\n' }}{% endif %}{{'<|im_start|>' + message['role'] + '\n' + message['content'] + '<|im_end|>' + '\n'}}{% endfor %}{% if add_generation_prompt %}{{ '<|im_start|>assistant\n' }}{% endif %}",
     "name": "Qwen2-1.5B-Instruct",
     "provider_url": "https://huggingface.co/Qwen/Qwen2-1.5B",
